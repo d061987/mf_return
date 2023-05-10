@@ -1,3 +1,4 @@
+#Importing Libraries
 import mysql.connector as mysql
 import pandas as pd
 from datetime import datetime, timedelta,date
@@ -67,5 +68,5 @@ for fund in all_fund_ID:
     # break
     return_df = return_df.append(union_df,ignore_index=True)
 
-#print(return_df.head())
+print(return_df.head())
 #return_df.to_excel('mf_final_return_file.xlsx')
