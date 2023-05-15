@@ -66,7 +66,9 @@ for fund in all_fund_ID:
     union_df = union_mf_5Y.iloc[:1]
     # print(union_df)
     # break
-    return_df = return_df.append(union_df,ignore_index=True)
+    # return_df = return_df.append(union_df,ignore_index=True)
+    return_df = pd.concat([return_df,union_df])
 
-print(return_df.head())
-#return_df.to_excel('mf_final_return_file.xlsx')
+
+# print(return_df.head())
+return_df.to_excel('mf_final_return_file.xlsx')

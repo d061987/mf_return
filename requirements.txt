@@ -1,0 +1,5 @@
+seaborn
+mysql-connector-python
+pymysql
+openpyxl
+loguru
