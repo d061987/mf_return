@@ -10,7 +10,10 @@ from bs4 import BeautifulSoup as bs
 import warnings 
 warnings.filterwarnings('ignore')
 logger.add('mf_fund3_extract.log', rotation='10 MB')
+import time
 
+
+run_id = datetime.now().strftime("%Y%m%d%H%M%S")
 
 connection = pymysql.connect(host='localhost',
                                         user='root',
@@ -33,15 +36,24 @@ for table in soup.find_all('select',{'class': 'select', 'id': 'NavDownMFName'})[
         mf_code.append(mf_Id)
 mf_code = mf_code[2:]
 
+f_date = (date.today()-timedelta(days=1825)).strftime('%Y-%m-%d')
+t_date = date.today().strftime('%Y-%m-%d')
+start = time.time()
+end = time.time()
+elapsed = end - start
+
 try:
 
     for org_cd in mf_code:
+        audit_cursor=connection.cursor()
+        audit_query = "Insert into mf_audit (Run_ID	,MF_House, Start_Date, End_Date, Elapsed_Time) values (%s,%s,%s,%s,%s)"
+        values = (run_id,org_cd,f_date,t_date,elapsed)
+        audit_cursor.execute(audit_query, values)
+        connection.commit()
 
         try:
             logger.info(f"extracting data for {org_cd}")
             mf_type = '1'
-            f_date = (date.today()-timedelta(days=1825)).strftime('%d-%b-%Y')
-            t_date = date.today().strftime('%d-%b-%Y')
 
 
             Nav_url = 'https://portal.amfiindia.com/DownloadNAVHistoryReport_Po.aspx?mf=' + org_cd \
@@ -63,17 +75,22 @@ try:
                 
 
                 # create cursor
-                cursor=connection.cursor()
+                data_cursor=connection.cursor()
 
                 cols = ",".join([str(i) for i in mf_df1.columns.tolist()])
                 logger.info(f" Writing Data For {org_cd}")
                 for i,row in mf_df1.iterrows():
                     sql = "INSERT INTO mf_fund3 (" +cols + ") VALUES (" + "%s,"*(len(row)-1) + "%s)"
-                    cursor.execute(sql, tuple(row))
+                    data_cursor.execute(sql, tuple(row))
 
-            
+               
                 connection.commit()
                 logger.info(f" Write Successful.{mf_df1.shape}")
+                final_cursor = connection.cursor()
+                insert_query = "INSERT INTO mf_audit ('Successful' )"
+                final_cursor.execute(insert_query)
+                connection.commit()
+
         except Exception as e:
             print(e)
 except Exception as e:
