@@ -19,7 +19,9 @@ connection = pymysql.connect(host='localhost',
                                         user='root',
                                         password='Bappa@1234567',
                                         db='STOCK2023')
+audit_query = "Insert into mf_audit (Run_ID	,MF_House, Start_Date, End_Date, Elapsed_Time, Record_Count) values (%s,%s,%s,%s,%s,%s)"
 
+#Extracting The Mutual Fund House ID and name
 URL = 'https://www.amfiindia.com/nav-history-download'
 
 Source = requests.get(URL)
@@ -36,21 +38,18 @@ for table in soup.find_all('select',{'class': 'select', 'id': 'NavDownMFName'})[
         mf_code.append(mf_Id)
 mf_code = mf_code[2:]
 
-f_date = (date.today()-timedelta(days=1825)).strftime('%Y-%m-%d')
+
+#Defining The Data Extraction Window
+f_date = (date.today()-timedelta(days=2200)).strftime('%Y-%m-%d')
 t_date = date.today().strftime('%Y-%m-%d')
-start = time.time()
-end = time.time()
-elapsed = end - start
+
+
+
 
 try:
 
     for org_cd in mf_code:
-        audit_cursor=connection.cursor()
-        audit_query = "Insert into mf_audit (Run_ID	,MF_House, Start_Date, End_Date, Elapsed_Time) values (%s,%s,%s,%s,%s)"
-        values = (run_id,org_cd,f_date,t_date,elapsed)
-        audit_cursor.execute(audit_query, values)
-        connection.commit()
-
+        start = time.time()
         try:
             logger.info(f"extracting data for {org_cd}")
             mf_type = '1'
@@ -82,16 +81,22 @@ try:
                 for i,row in mf_df1.iterrows():
                     sql = "INSERT INTO mf_fund3 (" +cols + ") VALUES (" + "%s,"*(len(row)-1) + "%s)"
                     data_cursor.execute(sql, tuple(row))
+                connection.commit()
 
-               
-                connection.commit()
-                logger.info(f" Write Successful.{mf_df1.shape}")
-                final_cursor = connection.cursor()
-                insert_query = "INSERT INTO mf_audit ('Successful' )"
-                final_cursor.execute(insert_query)
-                connection.commit()
+                # logger.info(f" Write Successful.{mf_df1.shape}")
+                # final_cursor = connection.cursor()
+                # insert_query = "INSERT INTO mf_audit ('Successful' )"
+                # final_cursor.execute(insert_query)
+                # connection.commit()
 
         except Exception as e:
             print(e)
+        finally:
+            end = time.time()
+            elapsed = end - start
+            audit_cursor=connection.cursor()
+            values = (run_id,org_cd,f_date,t_date,elapsed,len(mf_df1))
+            audit_cursor.execute(audit_query, values)
+            connection.commit()
 except Exception as e:
     print(e)
