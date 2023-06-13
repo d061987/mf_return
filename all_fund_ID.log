@@ -40173,3 +40173,348 @@
 7210213      150346  WhiteOak Capital Flexi Cap Fund Direct Plan Gr...           10.053 2023-03-02  ...           NaN          NaN           NaN          NaN
 
 [1 rows x 14 columns]
+2023-06-12 21:12:47.192 | INFO     | __main__:<module>:49 - extracting data for ['147713' '147157' '147515' '120249' '147564' '139538' '145810' '118701'
+ '103734' '150631' '150562' '146963' '149664' '146980' '119861' '147003'
+ '119303' '120785' '120304']
+2023-06-12 21:12:47.434 | INFO     | __main__:<module>:64 - extracting data for         Scheme_Code                                       Scheme_Name  Net_Asset_Value       Date
+4523552      147713  ITI Overnight Fund - Direct Plan - Growth Option        1000.7864 2019-10-28
+4523553      147713  ITI Overnight Fund - Direct Plan - Growth Option        1000.9150 2019-10-29
+4523554      147713  ITI Overnight Fund - Direct Plan - Growth Option        1001.0425 2019-10-30
+4523555      147713  ITI Overnight Fund - Direct Plan - Growth Option        1001.1703 2019-10-31
+4523556      147713  ITI Overnight Fund - Direct Plan - Growth Option        1001.2994 2019-11-01
+...             ...                                               ...              ...        ...
+4524862      147713  ITI Overnight Fund - Direct Plan - Growth Option        1153.9035 2023-05-30
+4524863      147713  ITI Overnight Fund - Direct Plan - Growth Option        1154.0916 2023-05-31
+4524864      147713  ITI Overnight Fund - Direct Plan - Growth Option        1154.2806 2023-06-01
+4524865      147713  ITI Overnight Fund - Direct Plan - Growth Option        1154.4716 2023-06-02
+4524866      147713  ITI Overnight Fund - Direct Plan - Growth Option        1154.6646 2023-06-03
+
+[1315 rows x 4 columns]
+2023-06-12 21:12:47.441 | INFO     | __main__:<module>:86 - extracting data for         Scheme_Code                                       Scheme_Name  Net_Asset_Value       Date  3M_OLD_Price  ...  1Y_per_chng  3Y_OLD_Price  3Y_per_chng  5Y_OLD_price  5Y_per_chng
+4524866      147713  ITI Overnight Fund - Direct Plan - Growth Option        1154.6646 2023-06-03     1142.3492  ...     4.239915     1053.8871     3.090961     1007.8409     2.757321
+
+[1 rows x 14 columns]
+2023-06-12 21:12:47.668 | INFO     | __main__:<module>:64 - extracting data for         Scheme_Code                                    Scheme_Name  Net_Asset_Value       Date
+4538857      147157  ITI Liquid Fund - Direct Plan - Growth Option        1000.0872 2019-04-24
+4538858      147157  ITI Liquid Fund - Direct Plan - Growth Option        1000.2652 2019-04-25
+4538859      147157  ITI Liquid Fund - Direct Plan - Growth Option        1000.4448 2019-04-26
+4538860      147157  ITI Liquid Fund - Direct Plan - Growth Option        1000.6246 2019-04-27
+4538861      147157  ITI Liquid Fund - Direct Plan - Growth Option        1000.8042 2019-04-28
+...             ...                                            ...              ...        ...
+4540354      147157  ITI Liquid Fund - Direct Plan - Growth Option        1190.2058 2023-05-30
+4540355      147157  ITI Liquid Fund - Direct Plan - Growth Option        1190.4192 2023-05-31
+4540356      147157  ITI Liquid Fund - Direct Plan - Growth Option        1190.6212 2023-06-01
+4540357      147157  ITI Liquid Fund - Direct Plan - Growth Option        1190.8687 2023-06-02
+4540358      147157  ITI Liquid Fund - Direct Plan - Growth Option        1191.0773 2023-06-03
+
+[1502 rows x 4 columns]
+2023-06-12 21:12:47.674 | INFO     | __main__:<module>:86 - extracting data for         Scheme_Code                                    Scheme_Name  Net_Asset_Value       Date  3M_OLD_Price  ...  1Y_per_chng  3Y_OLD_Price  3Y_per_chng  5Y_OLD_price  5Y_per_chng
+4540358      147157  ITI Liquid Fund - Direct Plan - Growth Option        1191.0773 2023-06-03     1177.4934  ...     4.486487     1083.3712     3.209788     1036.2941     2.823264
+
+[1 rows x 14 columns]
+2023-06-12 21:12:47.884 | INFO     | __main__:<module>:64 - extracting data for         Scheme_Code                               Scheme_Name  Net_Asset_Value       Date
+5359177      147515  LIC MF Overnight Fund-Direct Plan-Growth        1000.7054 2019-07-19
+5359178      147515  LIC MF Overnight Fund-Direct Plan-Growth        1000.8592 2019-07-20
+5359179      147515  LIC MF Overnight Fund-Direct Plan-Growth        1001.0130 2019-07-21
+5359180      147515  LIC MF Overnight Fund-Direct Plan-Growth        1001.1639 2019-07-22
+5359181      147515  LIC MF Overnight Fund-Direct Plan-Growth        1001.3147 2019-07-23
+...             ...                                       ...              ...        ...
+5360588      147515  LIC MF Overnight Fund-Direct Plan-Growth        1174.5547 2023-05-30
+5360589      147515  LIC MF Overnight Fund-Direct Plan-Growth        1174.7531 2023-05-31
+5360590      147515  LIC MF Overnight Fund-Direct Plan-Growth        1174.9493 2023-06-01
+5360591      147515  LIC MF Overnight Fund-Direct Plan-Growth        1175.1476 2023-06-02
+5360592      147515  LIC MF Overnight Fund-Direct Plan-Growth        1175.3579 2023-06-03
+
+[1416 rows x 4 columns]
+2023-06-12 21:12:47.890 | INFO     | __main__:<module>:86 - extracting data for         Scheme_Code                               Scheme_Name  Net_Asset_Value       Date  3M_OLD_Price  ...  1Y_per_chng  3Y_OLD_Price  3Y_per_chng  5Y_OLD_price  5Y_per_chng
+5360592      147515  LIC MF Overnight Fund-Direct Plan-Growth        1175.3579 2023-06-03      1162.361  ...     4.359385     1070.0409     3.178668     1022.3679     2.828283
+
+[1 rows x 14 columns]
+2023-06-12 21:12:48.097 | INFO     | __main__:<module>:64 - extracting data for         Scheme_Code                            Scheme_Name  Net_Asset_Value       Date
+5369820      120249  LIC MF Liquid Fund-Direct Plan-Growth        2978.2292 2017-05-25
+5369821      120249  LIC MF Liquid Fund-Direct Plan-Growth        2978.7630 2017-05-26
+5369822      120249  LIC MF Liquid Fund-Direct Plan-Growth        2979.8225 2017-05-28
+5369823      120249  LIC MF Liquid Fund-Direct Plan-Growth        2980.3522 2017-05-29
+5369824      120249  LIC MF Liquid Fund-Direct Plan-Growth        2980.8798 2017-05-30
+...             ...                                    ...              ...        ...
+5372012      120249  LIC MF Liquid Fund-Direct Plan-Growth        4134.6367 2023-05-30
+5372013      120249  LIC MF Liquid Fund-Direct Plan-Growth        4135.4427 2023-05-31
+5372014      120249  LIC MF Liquid Fund-Direct Plan-Growth        4136.3564 2023-06-01
+5372015      120249  LIC MF Liquid Fund-Direct Plan-Growth        4137.1888 2023-06-02
+5372016      120249  LIC MF Liquid Fund-Direct Plan-Growth        4137.9286 2023-06-03
+
+[2197 rows x 4 columns]
+2023-06-12 21:12:48.104 | INFO     | __main__:<module>:86 - extracting data for         Scheme_Code                            Scheme_Name  Net_Asset_Value       Date  3M_OLD_Price  ...  1Y_per_chng  3Y_OLD_Price  3Y_per_chng  5Y_OLD_price  5Y_per_chng
+5372016      120249  LIC MF Liquid Fund-Direct Plan-Growth        4137.9286 2023-06-03     4088.4269  ...     4.704756     3749.4127      3.34114     3544.6794     3.143344
+
+[1 rows x 14 columns]
+2023-06-12 21:12:48.312 | INFO     | __main__:<module>:64 - extracting data for         Scheme_Code                                        Scheme_Name  Net_Asset_Value       Date
+5511345      147564  Mahindra Manulife Overnight Fund - Direct Plan...        1000.2912 2019-07-24
+5511346      147564  Mahindra Manulife Overnight Fund - Direct Plan...        1000.4353 2019-07-25
+5511347      147564  Mahindra Manulife Overnight Fund - Direct Plan...        1000.5824 2019-07-26
+5511348      147564  Mahindra Manulife Overnight Fund - Direct Plan...        1000.7356 2019-07-27
+5511349      147564  Mahindra Manulife Overnight Fund - Direct Plan...        1000.8887 2019-07-28
+...             ...                                                ...              ...        ...
+5512751      147564  Mahindra Manulife Overnight Fund - Direct Plan...        1172.9812 2023-05-30
+5512752      147564  Mahindra Manulife Overnight Fund - Direct Plan...        1173.1757 2023-05-31
+5512753      147564  Mahindra Manulife Overnight Fund - Direct Plan...        1173.3716 2023-06-01
+5512754      147564  Mahindra Manulife Overnight Fund - Direct Plan...        1173.5664 2023-06-02
+5512755      147564  Mahindra Manulife Overnight Fund - Direct Plan...        1173.7682 2023-06-03
+
+[1411 rows x 4 columns]
+2023-06-12 21:12:48.319 | INFO     | __main__:<module>:86 - extracting data for         Scheme_Code                                        Scheme_Name  Net_Asset_Value       Date  3M_OLD_Price  ...  1Y_per_chng  3Y_OLD_Price  3Y_per_chng  5Y_OLD_price  5Y_per_chng
+5512755      147564  Mahindra Manulife Overnight Fund - Direct Plan...        1173.7682 2023-06-03     1160.7827  ...     4.364489      1068.413     3.184483      1020.819      2.83163
+
+[1 rows x 14 columns]
+2023-06-12 21:12:48.526 | INFO     | __main__:<module>:64 - extracting data for         Scheme_Code                                        Scheme_Name  Net_Asset_Value       Date
+5520888      139538  Mahindra Manulife Liquid Fund - Direct Plan -G...        1063.1729 2017-05-25
+5520889      139538  Mahindra Manulife Liquid Fund - Direct Plan -G...        1063.3581 2017-05-26
+5520890      139538  Mahindra Manulife Liquid Fund - Direct Plan -G...        1063.7464 2017-05-28
+5520891      139538  Mahindra Manulife Liquid Fund - Direct Plan -G...        1063.9350 2017-05-29
+5520892      139538  Mahindra Manulife Liquid Fund - Direct Plan -G...        1064.1251 2017-05-30
+...             ...                                                ...              ...        ...
+5523018      139538  Mahindra Manulife Liquid Fund - Direct Plan -G...        1481.6465 2023-05-30
+5523019      139538  Mahindra Manulife Liquid Fund - Direct Plan -G...        1481.9333 2023-05-31
+5523020      139538  Mahindra Manulife Liquid Fund - Direct Plan -G...        1482.2426 2023-06-01
+5523021      139538  Mahindra Manulife Liquid Fund - Direct Plan -G...        1482.5109 2023-06-02
+5523022      139538  Mahindra Manulife Liquid Fund - Direct Plan -G...        1482.7835 2023-06-03
+
+[2135 rows x 4 columns]
+2023-06-12 21:12:48.534 | INFO     | __main__:<module>:86 - extracting data for         Scheme_Code                                        Scheme_Name  Net_Asset_Value       Date  3M_OLD_Price  ...  1Y_per_chng  3Y_OLD_Price  3Y_per_chng  5Y_OLD_price  5Y_per_chng
+5523022      139538  Mahindra Manulife Liquid Fund - Direct Plan -G...        1482.7835 2023-06-03     1464.9173  ...     4.745923     1341.7488     3.387693     1268.7675     3.166605
+
+[1 rows x 14 columns]
+2023-06-12 21:12:48.742 | INFO     | __main__:<module>:64 - extracting data for         Scheme_Code                                        Scheme_Name  Net_Asset_Value       Date
+6061909      145810  Nippon India Overnight Fund - Direct Plan - Gr...         100.0347 2018-12-19
+6061910      145810  Nippon India Overnight Fund - Direct Plan - Gr...         100.0524 2018-12-20
+6061911      145810  Nippon India Overnight Fund - Direct Plan - Gr...         100.0701 2018-12-21
+6061912      145810  Nippon India Overnight Fund - Direct Plan - Gr...         100.1054 2018-12-23
+6061913      145810  Nippon India Overnight Fund - Direct Plan - Gr...         100.1232 2018-12-24
+...             ...                                                ...              ...        ...
+6063305      145810  Nippon India Overnight Fund - Direct Plan - Gr...         121.6643 2023-05-30
+6063306      145810  Nippon India Overnight Fund - Direct Plan - Gr...         121.6850 2023-05-31
+6063307      145810  Nippon India Overnight Fund - Direct Plan - Gr...         121.7055 2023-06-01
+6063308      145810  Nippon India Overnight Fund - Direct Plan - Gr...         121.7263 2023-06-02
+6063309      145810  Nippon India Overnight Fund - Direct Plan - Gr...         121.7473 2023-06-03
+
+[1401 rows x 4 columns]
+2023-06-12 21:12:48.749 | INFO     | __main__:<module>:86 - extracting data for         Scheme_Code                                        Scheme_Name  Net_Asset_Value       Date  3M_OLD_Price  ...  1Y_per_chng  3Y_OLD_Price  3Y_per_chng  5Y_OLD_price  5Y_per_chng
+6063309      145810  Nippon India Overnight Fund - Direct Plan - Gr...         121.7473 2023-06-03      120.3883  ...     4.383161      109.9358      3.46022      102.9044      3.42013
+
+[1 rows x 14 columns]
+2023-06-12 21:12:48.957 | INFO     | __main__:<module>:64 - extracting data for         Scheme_Code                                        Scheme_Name  Net_Asset_Value       Date
+6084119      118701  Nippon India Liquid Fund - Direct Plan Growth ...        4006.7222 2017-05-25
+6084120      118701  Nippon India Liquid Fund - Direct Plan Growth ...        4007.4401 2017-05-26
+6084121      118701  Nippon India Liquid Fund - Direct Plan Growth ...        4008.8465 2017-05-28
+6084122      118701  Nippon India Liquid Fund - Direct Plan Growth ...        4009.5938 2017-05-29
+6084123      118701  Nippon India Liquid Fund - Direct Plan Growth ...        4010.3079 2017-05-30
+...             ...                                                ...              ...        ...
+6086314      118701  Nippon India Liquid Fund - Direct Plan Growth ...        5570.3317 2023-05-30
+6086315      118701  Nippon India Liquid Fund - Direct Plan Growth ...        5571.4256 2023-05-31
+6086316      118701  Nippon India Liquid Fund - Direct Plan Growth ...        5572.6560 2023-06-01
+6086317      118701  Nippon India Liquid Fund - Direct Plan Growth ...        5573.7850 2023-06-02
+6086318      118701  Nippon India Liquid Fund - Direct Plan Growth ...        5574.7806 2023-06-03
+
+[2200 rows x 4 columns]
+2023-06-12 21:12:48.965 | INFO     | __main__:<module>:86 - extracting data for         Scheme_Code                                        Scheme_Name  Net_Asset_Value       Date  3M_OLD_Price  ...  1Y_per_chng  3Y_OLD_Price  3Y_per_chng  5Y_OLD_price  5Y_per_chng
+6086318      118701  Nippon India Liquid Fund - Direct Plan Growth ...        5574.7806 2023-06-03     5507.9841  ...     4.733165     5049.2184     3.355726     4777.1312     3.136437
+
+[1 rows x 14 columns]
+2023-06-12 21:12:49.173 | INFO     | __main__:<module>:64 - extracting data for         Scheme_Code                                      Scheme_Name  Net_Asset_Value       Date
+6781159      103734  Quantum Liquid Fund - Direct Plan Growth Option          22.7120 2017-05-25
+6781160      103734  Quantum Liquid Fund - Direct Plan Growth Option          22.7154 2017-05-26
+6781161      103734  Quantum Liquid Fund - Direct Plan Growth Option          22.7228 2017-05-28
+6781162      103734  Quantum Liquid Fund - Direct Plan Growth Option          22.7260 2017-05-29
+6781163      103734  Quantum Liquid Fund - Direct Plan Growth Option          22.7298 2017-05-30
+...             ...                                              ...              ...        ...
+6783345      103734  Quantum Liquid Fund - Direct Plan Growth Option          30.6187 2023-05-30
+6783346      103734  Quantum Liquid Fund - Direct Plan Growth Option          30.6249 2023-05-31
+6783347      103734  Quantum Liquid Fund - Direct Plan Growth Option          30.6301 2023-06-01
+6783348      103734  Quantum Liquid Fund - Direct Plan Growth Option          30.6370 2023-06-02
+6783349      103734  Quantum Liquid Fund - Direct Plan Growth Option          30.6424 2023-06-03
+
+[2191 rows x 4 columns]
+2023-06-12 21:12:49.181 | INFO     | __main__:<module>:86 - extracting data for         Scheme_Code                                      Scheme_Name  Net_Asset_Value       Date  3M_OLD_Price  ...  1Y_per_chng  3Y_OLD_Price  3Y_per_chng  5Y_OLD_price  5Y_per_chng
+6783349      103734  Quantum Liquid Fund - Direct Plan Growth Option          30.6424 2023-06-03        30.285  ...     4.528057       27.8738     3.206931       26.5659     2.896274
+
+[1 rows x 14 columns]
+2023-06-12 21:12:49.390 | INFO     | __main__:<module>:64 - extracting data for         Scheme_Code                                        Scheme_Name  Net_Asset_Value       Date
+6813438      150631  Samco Overnight Fund - Direct Plan - Growth Op...        1001.1562 2022-10-13
+6813439      150631  Samco Overnight Fund - Direct Plan - Growth Op...        1001.3203 2022-10-14
+6813440      150631  Samco Overnight Fund - Direct Plan - Growth Op...        1001.4845 2022-10-15
+6813441      150631  Samco Overnight Fund - Direct Plan - Growth Op...        1001.6486 2022-10-16
+6813442      150631  Samco Overnight Fund - Direct Plan - Growth Op...        1001.8014 2022-10-17
+...             ...                                                ...              ...        ...
+6813667      150631  Samco Overnight Fund - Direct Plan - Growth Op...        1040.7125 2023-05-30
+6813668      150631  Samco Overnight Fund - Direct Plan - Growth Op...        1040.8848 2023-05-31
+6813669      150631  Samco Overnight Fund - Direct Plan - Growth Op...        1041.0562 2023-06-01
+6813670      150631  Samco Overnight Fund - Direct Plan - Growth Op...        1041.2329 2023-06-02
+6813671      150631  Samco Overnight Fund - Direct Plan - Growth Op...        1041.4128 2023-06-03
+
+[234 rows x 4 columns]
+2023-06-12 21:12:49.395 | INFO     | __main__:<module>:86 - extracting data for         Scheme_Code                                        Scheme_Name  Net_Asset_Value       Date  3M_OLD_Price  ...  1Y_per_chng  3Y_OLD_Price  3Y_per_chng  5Y_OLD_price  5Y_per_chng
+6813671      150631  Samco Overnight Fund - Direct Plan - Growth Op...        1041.4128 2023-06-03      1029.693  ...          NaN           NaN          NaN           NaN          NaN
+
+[1 rows x 14 columns]
+2023-06-12 21:12:49.604 | INFO     | __main__:<module>:64 - extracting data for         Scheme_Code                              Scheme_Name  Net_Asset_Value       Date
+7194033      150562  Shriram Overnight Fund -  Direct Growth          10.0255 2022-09-05
+7194034      150562  Shriram Overnight Fund -  Direct Growth          10.0269 2022-09-06
+7194035      150562  Shriram Overnight Fund -  Direct Growth          10.0283 2022-09-07
+7194036      150562  Shriram Overnight Fund -  Direct Growth          10.0297 2022-09-08
+7194037      150562  Shriram Overnight Fund -  Direct Growth          10.0311 2022-09-09
+...             ...                                      ...              ...        ...
+7194277      150562  Shriram Overnight Fund -  Direct Growth          10.4834 2023-05-30
+7194278      150562  Shriram Overnight Fund -  Direct Growth          10.4852 2023-05-31
+7194279      150562  Shriram Overnight Fund -  Direct Growth          10.4869 2023-06-01
+7194280      150562  Shriram Overnight Fund -  Direct Growth          10.4887 2023-06-02
+7194281      150562  Shriram Overnight Fund -  Direct Growth          10.4905 2023-06-03
+
+[249 rows x 4 columns]
+2023-06-12 21:12:49.609 | INFO     | __main__:<module>:86 - extracting data for         Scheme_Code                              Scheme_Name  Net_Asset_Value       Date  3M_OLD_Price  ...  1Y_per_chng  3Y_OLD_Price  3Y_per_chng  5Y_OLD_price  5Y_per_chng
+7194281      150562  Shriram Overnight Fund -  Direct Growth          10.4905 2023-06-03       10.3746  ...          NaN           NaN          NaN           NaN          NaN
+
+[1 rows x 14 columns]
+2023-06-12 21:12:49.818 | INFO     | __main__:<module>:64 - extracting data for         Scheme_Code                                   Scheme_Name  Net_Asset_Value       Date
+7287987      146963  Sundaram Overnight Fund Direct Plan - Growth        1000.7902 2019-03-24
+7287988      146963  Sundaram Overnight Fund Direct Plan - Growth        1000.9522 2019-03-25
+7287989      146963  Sundaram Overnight Fund Direct Plan - Growth        1001.1105 2019-03-26
+7287990      146963  Sundaram Overnight Fund Direct Plan - Growth        1001.2719 2019-03-27
+7287991      146963  Sundaram Overnight Fund Direct Plan - Growth        1001.4313 2019-03-28
+...             ...                                           ...              ...        ...
+7289515      146963  Sundaram Overnight Fund Direct Plan - Growth        1204.0685 2023-05-30
+7289516      146963  Sundaram Overnight Fund Direct Plan - Growth        1204.2718 2023-05-31
+7289517      146963  Sundaram Overnight Fund Direct Plan - Growth        1204.4739 2023-06-01
+7289518      146963  Sundaram Overnight Fund Direct Plan - Growth        1204.6803 2023-06-02
+7289519      146963  Sundaram Overnight Fund Direct Plan - Growth        1204.8882 2023-06-03
+
+[1533 rows x 4 columns]
+2023-06-12 21:12:49.824 | INFO     | __main__:<module>:86 - extracting data for         Scheme_Code                                   Scheme_Name  Net_Asset_Value       Date  3M_OLD_Price  ...  1Y_per_chng  3Y_OLD_Price  3Y_per_chng  5Y_OLD_price  5Y_per_chng
+7289519      146963  Sundaram Overnight Fund Direct Plan - Growth        1204.8882 2023-06-03      1191.537  ...     4.359288     1097.9247     3.147348     1048.9492     2.810734
+
+[1 rows x 14 columns]
+2023-06-12 21:12:50.032 | INFO     | __main__:<module>:64 - extracting data for         Scheme_Code                                        Scheme_Name  Net_Asset_Value       Date
+7305626      149664  Sundaram Liquid Fund (Formerly Known as Princi...        1862.4370 2022-01-01
+7305627      149664  Sundaram Liquid Fund (Formerly Known as Princi...        1862.6104 2022-01-02
+7305628      149664  Sundaram Liquid Fund (Formerly Known as Princi...        1862.8186 2022-01-03
+7305629      149664  Sundaram Liquid Fund (Formerly Known as Princi...        1863.0102 2022-01-04
+7305630      149664  Sundaram Liquid Fund (Formerly Known as Princi...        1863.2480 2022-01-05
+...             ...                                                ...              ...        ...
+7306140      149664  Sundaram Liquid Fund (Formerly Known as Princi...        2010.5578 2023-05-30
+7306141      149664  Sundaram Liquid Fund (Formerly Known as Princi...        2010.9303 2023-05-31
+7306142      149664  Sundaram Liquid Fund (Formerly Known as Princi...        2011.3540 2023-06-01
+7306143      149664  Sundaram Liquid Fund (Formerly Known as Princi...        2011.7710 2023-06-02
+7306144      149664  Sundaram Liquid Fund (Formerly Known as Princi...        2012.1316 2023-06-03
+
+[519 rows x 4 columns]
+2023-06-12 21:12:50.038 | INFO     | __main__:<module>:86 - extracting data for         Scheme_Code                                        Scheme_Name  Net_Asset_Value       Date  3M_OLD_Price  ...  1Y_per_chng  3Y_OLD_Price  3Y_per_chng  5Y_OLD_price  5Y_per_chng
+7306144      149664  Sundaram Liquid Fund (Formerly Known as Princi...        2012.1316 2023-06-03     1988.2484  ...     4.720226           NaN          NaN           NaN          NaN
+
+[1 rows x 14 columns]
+2023-06-12 21:12:50.245 | INFO     | __main__:<module>:64 - extracting data for         Scheme_Code                             Scheme_Name  Net_Asset_Value       Date
+7655032      146980  Tata Overnight Fund-Direct Plan-Growth        1000.5018 2019-03-28
+7655033      146980  Tata Overnight Fund-Direct Plan-Growth        1000.6840 2019-03-29
+7655034      146980  Tata Overnight Fund-Direct Plan-Growth        1000.8664 2019-03-30
+7655035      146980  Tata Overnight Fund-Direct Plan-Growth        1001.0491 2019-03-31
+7655036      146980  Tata Overnight Fund-Direct Plan-Growth        1001.2318 2019-04-01
+...             ...                                     ...              ...        ...
+7656556      146980  Tata Overnight Fund-Direct Plan-Growth        1195.2732 2023-05-30
+7656557      146980  Tata Overnight Fund-Direct Plan-Growth        1195.4733 2023-05-31
+7656558      146980  Tata Overnight Fund-Direct Plan-Growth        1195.6733 2023-06-01
+7656559      146980  Tata Overnight Fund-Direct Plan-Growth        1195.8770 2023-06-02
+7656560      146980  Tata Overnight Fund-Direct Plan-Growth        1196.0824 2023-06-03
+
+[1529 rows x 4 columns]
+2023-06-12 21:12:50.252 | INFO     | __main__:<module>:86 - extracting data for         Scheme_Code                             Scheme_Name  Net_Asset_Value       Date  3M_OLD_Price  ...  1Y_per_chng  3Y_OLD_Price  3Y_per_chng  5Y_OLD_price  5Y_per_chng
+7656560      146980  Tata Overnight Fund-Direct Plan-Growth        1196.0824 2023-06-03     1182.8203  ...     4.359802     1089.4593     3.161274     1040.8268     2.819746
+
+[1 rows x 14 columns]
+2023-06-12 21:12:50.460 | INFO     | __main__:<module>:64 - extracting data for         Scheme_Code                                  Scheme_Name  Net_Asset_Value       Date
+7662492      119861  Tata Liquid Fund- Direct Plan-Growth Option        2588.3005 2017-05-25
+7662493      119861  Tata Liquid Fund- Direct Plan-Growth Option        2588.7045 2017-05-26
+7662494      119861  Tata Liquid Fund- Direct Plan-Growth Option        2589.1911 2017-05-27
+7662495      119861  Tata Liquid Fund- Direct Plan-Growth Option        2589.6780 2017-05-28
+7662496      119861  Tata Liquid Fund- Direct Plan-Growth Option        2590.1329 2017-05-29
+...             ...                                          ...              ...        ...
+7664687      119861  Tata Liquid Fund- Direct Plan-Growth Option        3592.1432 2023-05-30
+7664688      119861  Tata Liquid Fund- Direct Plan-Growth Option        3592.8513 2023-05-31
+7664689      119861  Tata Liquid Fund- Direct Plan-Growth Option        3593.6198 2023-06-01
+7664690      119861  Tata Liquid Fund- Direct Plan-Growth Option        3594.3994 2023-06-02
+7664691      119861  Tata Liquid Fund- Direct Plan-Growth Option        3595.0403 2023-06-03
+
+[2200 rows x 4 columns]
+2023-06-12 21:12:50.467 | INFO     | __main__:<module>:86 - extracting data for         Scheme_Code                                  Scheme_Name  Net_Asset_Value       Date  3M_OLD_Price  ...  1Y_per_chng  3Y_OLD_Price  3Y_per_chng  5Y_OLD_price  5Y_per_chng
+7664691      119861  Tata Liquid Fund- Direct Plan-Growth Option        3595.0403 2023-06-03     3552.0819  ...     4.689831     3258.4093     3.331494     3081.4862     3.130876
+
+[1 rows x 14 columns]
+2023-06-12 21:12:50.676 | INFO     | __main__:<module>:64 - extracting data for         Scheme_Code                                        Scheme_Name  Net_Asset_Value       Date
+7960073      147003  Union Overnight Fund - Direct Plan - Growth Op...        1000.1627 2019-03-27
+7960074      147003  Union Overnight Fund - Direct Plan - Growth Op...        1000.3256 2019-03-28
+7960075      147003  Union Overnight Fund - Direct Plan - Growth Op...        1000.5034 2019-03-29
+7960076      147003  Union Overnight Fund - Direct Plan - Growth Op...        1000.6828 2019-03-30
+7960077      147003  Union Overnight Fund - Direct Plan - Growth Op...        1000.8623 2019-03-31
+...             ...                                                ...              ...        ...
+7961598      147003  Union Overnight Fund - Direct Plan - Growth Op...        1192.9246 2023-05-30
+7961599      147003  Union Overnight Fund - Direct Plan - Growth Op...        1193.1240 2023-05-31
+7961600      147003  Union Overnight Fund - Direct Plan - Growth Op...        1193.3219 2023-06-01
+7961601      147003  Union Overnight Fund - Direct Plan - Growth Op...        1193.5246 2023-06-02
+7961602      147003  Union Overnight Fund - Direct Plan - Growth Op...        1193.7309 2023-06-03
+
+[1530 rows x 4 columns]
+2023-06-12 21:12:50.683 | INFO     | __main__:<module>:86 - extracting data for         Scheme_Code                                        Scheme_Name  Net_Asset_Value       Date  3M_OLD_Price  ...  1Y_per_chng  3Y_OLD_Price  3Y_per_chng  5Y_OLD_price  5Y_per_chng
+7961602      147003  Union Overnight Fund - Direct Plan - Growth Op...        1193.7309 2023-06-03     1180.5286  ...     4.353328     1087.2497     3.163416     1039.6507     2.802529
+
+[1 rows x 14 columns]
+2023-06-12 21:12:50.894 | INFO     | __main__:<module>:64 - extracting data for         Scheme_Code                                      Scheme_Name  Net_Asset_Value       Date
+7975751      119303  Union Liquid Fund - Direct Plan - Growth Option        1641.1466 2017-05-25
+7975752      119303  Union Liquid Fund - Direct Plan - Growth Option        1641.4360 2017-05-26
+7975753      119303  Union Liquid Fund - Direct Plan - Growth Option        1641.7240 2017-05-27
+7975754      119303  Union Liquid Fund - Direct Plan - Growth Option        1642.0122 2017-05-28
+7975755      119303  Union Liquid Fund - Direct Plan - Growth Option        1642.2961 2017-05-29
+...             ...                                              ...              ...        ...
+7977947      119303  Union Liquid Fund - Direct Plan - Growth Option        2194.7197 2023-05-30
+7977948      119303  Union Liquid Fund - Direct Plan - Growth Option        2195.1581 2023-05-31
+7977949      119303  Union Liquid Fund - Direct Plan - Growth Option        2195.6384 2023-06-01
+7977950      119303  Union Liquid Fund - Direct Plan - Growth Option        2196.0940 2023-06-02
+7977951      119303  Union Liquid Fund - Direct Plan - Growth Option        2196.4938 2023-06-03
+
+[2201 rows x 4 columns]
+2023-06-12 21:12:50.901 | INFO     | __main__:<module>:86 - extracting data for         Scheme_Code                                      Scheme_Name  Net_Asset_Value       Date  3M_OLD_Price  ...  1Y_per_chng  3Y_OLD_Price  3Y_per_chng  5Y_OLD_price  5Y_per_chng
+7977951      119303  Union Liquid Fund - Direct Plan - Growth Option        2196.4938 2023-06-03      2169.865  ...     4.757861     1988.7383     3.367524     1880.4345     3.155967
+
+[1 rows x 14 columns]
+2023-06-12 21:12:51.109 | INFO     | __main__:<module>:64 - extracting data for         Scheme_Code                                        Scheme_Name  Net_Asset_Value       Date
+8124340      120785  UTI - Overnight Fund - Direct Plan - Growth Op...          23.3799 2017-05-25
+8124341      120785  UTI - Overnight Fund - Direct Plan - Growth Op...          23.3880 2017-05-26
+8124342      120785  UTI - Overnight Fund - Direct Plan - Growth Op...          23.3876 2017-05-29
+8124343      120785  UTI - Overnight Fund - Direct Plan - Growth Op...          23.3998 2017-05-30
+8124344      120785  UTI - Overnight Fund - Direct Plan - Growth Op...          23.4124 2017-05-31
+...             ...                                                ...              ...        ...
+8126420      120785  UTI - Overnight Fund - Direct Plan - Growth Op...        3101.4566 2023-05-30
+8126421      120785  UTI - Overnight Fund - Direct Plan - Growth Op...        3101.9810 2023-05-31
+8126422      120785  UTI - Overnight Fund - Direct Plan - Growth Op...        3102.5013 2023-06-01
+8126423      120785  UTI - Overnight Fund - Direct Plan - Growth Op...        3103.0272 2023-06-02
+8126424      120785  UTI - Overnight Fund - Direct Plan - Growth Op...        3103.5549 2023-06-03
+
+[2085 rows x 4 columns]
+2023-06-12 21:12:51.116 | INFO     | __main__:<module>:86 - extracting data for         Scheme_Code                                        Scheme_Name  Net_Asset_Value       Date  3M_OLD_Price  ...  1Y_per_chng  3Y_OLD_Price  3Y_per_chng  5Y_OLD_price  5Y_per_chng
+8126424      120785  UTI - Overnight Fund - Direct Plan - Growth Op...        3103.5549 2023-06-03     3069.2042  ...     4.354854     2826.7729     3.162733     2700.4875     2.821386
+
+[1 rows x 14 columns]
+2023-06-12 21:12:51.324 | INFO     | __main__:<module>:64 - extracting data for         Scheme_Code                                        Scheme_Name  Net_Asset_Value       Date
+8168082      120304  UTI-  Liquid Cash Plan - Direct Plan - Growth ...        2689.5561 2017-05-25
+8168083      120304  UTI-  Liquid Cash Plan - Direct Plan - Growth ...        2690.0329 2017-05-26
+8168084      120304  UTI-  Liquid Cash Plan - Direct Plan - Growth ...        2690.5006 2017-05-27
+8168085      120304  UTI-  Liquid Cash Plan - Direct Plan - Growth ...        2690.9683 2017-05-28
+8168086      120304  UTI-  Liquid Cash Plan - Direct Plan - Growth ...        2691.4378 2017-05-29
+...             ...                                                ...              ...        ...
+8170278      120304  UTI-  Liquid Cash Plan - Direct Plan - Growth ...        3732.0356 2023-05-30
+8170279      120304  UTI-  Liquid Cash Plan - Direct Plan - Growth ...        3732.7492 2023-05-31
+8170280      120304  UTI-  Liquid Cash Plan - Direct Plan - Growth ...        3733.5453 2023-06-01
+8170281      120304  UTI-  Liquid Cash Plan - Direct Plan - Growth ...        3734.3074 2023-06-02
+8170282      120304  UTI-  Liquid Cash Plan - Direct Plan - Growth ...        3734.9828 2023-06-03
+
+[2201 rows x 4 columns]
+2023-06-12 21:12:51.460 | INFO     | __main__:<module>:86 - extracting data for         Scheme_Code                                        Scheme_Name  Net_Asset_Value       Date  3M_OLD_Price  ...  1Y_per_chng  3Y_OLD_Price  3Y_per_chng  5Y_OLD_price  5Y_per_chng
+8170282      120304  UTI-  Liquid Cash Plan - Direct Plan - Growth ...        3734.9828 2023-06-03     3690.1138  ...     4.743239     3381.6497     3.368131     3202.1874     3.126047
+
+[1 rows x 14 columns]

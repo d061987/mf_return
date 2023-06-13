@@ -10,15 +10,32 @@ from bs4 import BeautifulSoup as bs
 import warnings 
 warnings.filterwarnings('ignore')
 logger.add('mf_fund3_extract.log', rotation='10 MB')
+import configparser
+from cryptography.fernet import Fernet
 import time
+
+config = configparser.ConfigParser()
+config.read('config.ini')
 
 
 run_id = datetime.now().strftime("%Y%m%d%H%M%S")
 
-connection = pymysql.connect(host='localhost',
-                                        user='root',
-                                        password='Bappa@1234567',
-                                        db='STOCK2023')
+key = config['mysqldb']['key']
+cipher_suite = Fernet(key.encode('utf-8'))
+# ciphered_text = cipher_suite.encrypt(config['mysqldb']['db_password'])   
+
+unciphered_pwd = (cipher_suite.decrypt((config['mysqldb']['db_password']).encode('utf-8'))).decode()
+
+# connection = pymysql.connect(host='localhost',
+#                                         user='root',
+#                                         password='Bappa@1234567',
+#                                         db='STOCK2023')
+myhost = config['mysqldb']['host']
+print(myhost)
+connection = mysql.connect(host = 'localhost', port = config['mysqldb']['port'], \
+    user = config['mysqldb']['user'], password=unciphered_pwd, database= 'STOCK2023')
+
+
 audit_query = "Insert into mf_audit (Run_ID	,MF_House, Start_Date, End_Date, Elapsed_Time, Record_Count) values (%s,%s,%s,%s,%s,%s)"
 
 #Extracting The Mutual Fund House ID and name
@@ -68,11 +85,11 @@ try:
 
                 mf_df[['Scheme_Code','Scheme_Name','ISIN_Div_Payout_ISIN_Growth','ISIN_Div_Reinvestment','Net_Asset_Value','Repurchase_Price',
                 'Sale_Price','Date']] = mf_df['Scheme Code;Scheme Name;ISIN Div Payout/ISIN Growth;ISIN Div Reinvestment;Net Asset Value;Repurchase Price;Sale Price;Date'].str.split(';', expand=True)
-
+                
                 mf_df1 = mf_df.iloc[:,1:]
 
-                
 
+                
                 # create cursor
                 data_cursor=connection.cursor()
 
