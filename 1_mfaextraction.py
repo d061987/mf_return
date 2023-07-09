@@ -20,20 +20,20 @@ config.read('config.ini')
 
 run_id = datetime.now().strftime("%Y%m%d%H%M%S")
 
-key = config['mysqldb']['key']
-cipher_suite = Fernet(key.encode('utf-8'))
-# ciphered_text = cipher_suite.encrypt(config['mysqldb']['db_password'])   
+# key = config['mysqldb']['key']
+# cipher_suite = Fernet(key.encode('utf-8'))
+# # ciphered_text = cipher_suite.encrypt(config['mysqldb']['db_password'])   
 
-unciphered_pwd = (cipher_suite.decrypt((config['mysqldb']['db_password']).encode('utf-8'))).decode()
+# unciphered_pwd = (cipher_suite.decrypt((config['mysqldb']['db_password']).encode('utf-8'))).decode()
 
-# connection = pymysql.connect(host='localhost',
-#                                         user='root',
-#                                         password='Bappa@1234567',
-#                                         db='STOCK2023')
-myhost = config['mysqldb']['host']
-print(myhost)
-connection = mysql.connect(host = 'localhost', port = config['mysqldb']['port'], \
-    user = config['mysqldb']['user'], password=unciphered_pwd, database= 'STOCK2023')
+connection = pymysql.connect(host='localhost',
+                                        user='root',
+                                        password='Bappa@1234567',
+                                        db='STOCK2023')
+# myhost = config['mysqldb']['host']
+# print(myhost)
+# connection = mysql.connect(host = 'localhost', port = config['mysqldb']['port'], \
+#     user = config['mysqldb']['user'], password=unciphered_pwd, database= 'STOCK2023')
 
 
 audit_query = "Insert into mf_audit (Run_ID	,MF_House, Start_Date, End_Date, Elapsed_Time, Record_Count) values (%s,%s,%s,%s,%s,%s)"
@@ -62,7 +62,6 @@ t_date = date.today().strftime('%Y-%m-%d')
 
 
 
-
 try:
 
     for org_cd in mf_code:
@@ -86,16 +85,16 @@ try:
                 mf_df[['Scheme_Code','Scheme_Name','ISIN_Div_Payout_ISIN_Growth','ISIN_Div_Reinvestment','Net_Asset_Value','Repurchase_Price',
                 'Sale_Price','Date']] = mf_df['Scheme Code;Scheme Name;ISIN Div Payout/ISIN Growth;ISIN Div Reinvestment;Net Asset Value;Repurchase Price;Sale Price;Date'].str.split(';', expand=True)
                 
-                mf_df1 = mf_df.iloc[:,1:]
+                mf_df2 = mf_df.iloc[:,1:]
 
 
                 
                 # create cursor
                 data_cursor=connection.cursor()
 
-                cols = ",".join([str(i) for i in mf_df1.columns.tolist()])
+                cols = ",".join([str(i) for i in mf_df2.columns.tolist()])
                 logger.info(f" Writing Data For {org_cd}")
-                for i,row in mf_df1.iterrows():
+                for i,row in mf_df2.iterrows():
                     sql = "INSERT INTO mf_fund3 (" +cols + ") VALUES (" + "%s,"*(len(row)-1) + "%s)"
                     data_cursor.execute(sql, tuple(row))
                 connection.commit()
@@ -112,8 +111,9 @@ try:
             end = time.time()
             elapsed = end - start
             audit_cursor=connection.cursor()
-            values = (run_id,org_cd,f_date,t_date,elapsed,len(mf_df1))
+            values = (run_id,org_cd,f_date,t_date,elapsed,len(mf_df2))
             audit_cursor.execute(audit_query, values)
             connection.commit()
+            
 except Exception as e:
     print(e)
